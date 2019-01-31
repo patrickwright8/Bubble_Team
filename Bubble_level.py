@@ -17,11 +17,11 @@ while True:
     while True:
         if orientation < -90:
             display.show(Image.ARROW_NW)
-        elif orientation > -90 and orientation < 0:
+        elif orientation > -90 and orientation < -15:
             display.show(Image.ARROW_NE)
         elif orientation > 90:
             display.show(Image.ARROW_SW)
-        elif orientation < 90 and orientation > 0:
+        elif orientation < 90 and orientation > 15:
             display.show(Image.ARROW_SE)
         else:
-            display.show(Image("00000:00000:00900:00000:00000"))
+            display.show(Image("00000:00900:09990:00900:00000"))
